@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/helloWorld"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Hello World!"
+        android:textSize="50sp"
+        android:gravity="center_horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_below="@id/myFlag"/>
+
+    <TextView
+        android:id="@+id/myUrduName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/jameelnoorinastaleeq"
+        android:text="@string/my_urdu_name"
+        android:textColor="@color/colorAccent"
+        android:textSize="50sp"
+        android:layout_margin="20dp"
+        android:gravity="center_horizontal"
+        android:layout_below="@id/helloWorld"/>
+
+    <ImageView
+        android:id="@+id/myFlag"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        app:srcCompat="@raw/pk"
+        />
+
+</RelativeLayout>
